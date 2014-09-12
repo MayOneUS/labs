@@ -1,1 +1,1 @@
-Labs
+Labs is an Open Source Project for our technology
