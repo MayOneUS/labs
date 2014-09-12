@@ -1,0 +1,44 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="google-site-verification" content="eotfmNVR-r4qTL0MAFLUR0XVumvKeC2i87xYg102u7I" />
+  {% if page.noIndex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" id="googlefonts-css" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Lato:400,700&amp;subset=latin" />
+
+  <link rel="stylesheet" href="/{{ 'css/common.css' | md5_cache_bust }}">
+  <link rel="stylesheet" href="/{{ 'css/style.css' | md5_cache_bust }}">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial" />
+
+
+
+  <meta property="og:url" content="https://mayday.us{{ page.url }}"/>
+  <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}
+https://mayday.us/images/ProfilePic.jpg{% endif %}"/>
+  <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}MAYDAY: Democracy needs an upgrade. Act now.{% endif %}"/>
+  <meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% else %}Money has corrupted politics. We’re kickstarting a political experiment big enough to win a Congress committed to fundamental reform -- Join us!{% endif %}"/>
+  {% if page.twitter_image %}
+    <meta property="twitter:card" content="photo" />
+    <meta property="twitter:image" content="{{page.twitter_image}}" />
+  {% endif %}
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="//c.shpg.org/220/sp.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdn.optimizely.com/js/210578001.js"></script>
+    <script src="/js/plugins.js?7"></script>
+
+  {% include analytics.html %}
+
+</head>
